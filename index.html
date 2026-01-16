@@ -6,73 +6,95 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" media="all" href="css/reservia.css">
+        <link rel="stylesheet" media="all" href="css/new_reservia.css">
         <link rel="icon" type="image/svg" href="images/Logo/Reservia.svg" />
         <script src="https://kit.fontawesome.com/25333533ea.js" crossorigin="anonymous"></script>
     </head>
 <body>
-    <!-- 
-        HEADER section
-    -->
     <header>
-        <!-- 
-            Logo + Subscription link
-        -->
-        <div id="topHeader">
+        <div class="topHeader">
             <img src="images/Logo/Reservia.svg" alt="Logo Reservia">
-            <span><a href="#"><strong>S'inscrire</strong></a></span>
-        </div> 
-    </header>    
-    <!-- 
-        Menu
-    -->         
-    <nav>            
-        <ul>
-            <li><a href="#leftCol">Hébergements</a></li>
-            <li><a href="#blocAct">Activités</a></li>
-        </ul>
-    </nav>  
-    <!-- 
-        Content section : Accomodations + Activities
-    -->
-    <div id="mainContent">
-        <section id="generalContent">
+            <a href="#">S'inscrire</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#leftCol">Hébergements</a></li>
+                <li><a href="#blocAct">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainContent">
+        <section class="search-filters">
             <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <!-- 
-                Search section
-            --> 
-            <div id="search">
-                <div id="icoSearch"><i class="fas fa-map-marker-alt"></i></div>
-                <div id="ztext">
-                    <form>
-                        <input type="text" name="search" placeholder="Marseille, France">
+            <div class="bloc-search">
+                <span class="icoSearch"><i class="fas fa-map-marker-alt"></i></span>
+                <div class="search-input">
+                    <form method="post">
+                        <label for="search" aria-hidden="true">Localisation</label>
+                        <input name="search" placeholder="Marseille, France" type="text">
                     </form>
                 </div>
-                <div id="btnSearch"><button id="btText">Rechercher</button> <button id="btIco"><i class="fas fa-search"></i></button></div>
+                <div class="btn-group-search">
+                    <button>Rechercher</button>
+                    <button><i class="fas fa-search"></i></button>
+                </div>
             </div>
-            <!-- 
-                Filters section
-            --> 
-            <div id="filters">
-                <p><strong>Filtres</strong></p>
+            <h2>Filtres</h2>
+            <div class="bloc-filters">
                 <ul>
                     <li><a href="#"><span><i class="fas fa-money-bill-wave"></i></span><span>&Eacute;conomique</span></a></li>
                     <li><a href="#"><span><i class="fas fa-child"></i></span><span>Familial</span></a></li>
                     <li><a href="#"><span><i class="fas fa-heart"></i></span><span>Romantique</span></a></li>
-                    <li><a href="#"><span><i class="fas fa-dog"></i></span><span>Animaux autorisés</span></a></li>
+                    <li><a href="#"><span><i class="fas fa-dog"></i></span>Animaux autorisés</a></li>
                 </ul>
-            </div>        
-            <p id="info"><span><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville</p>
-        </section>        
+            </div>
+            <p><span><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville</p>
+        </section>
+        <section class="bloc-data">
+            <aside class="rightCol">
+                <h2 class="data-title">Les plus populaires<span><i class="fas fa-chart-line"></i></span></h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images//hebergements/Large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                            <span class="accomName"><strong>Hôtel Le soleil du<br>matin</strong></span>
+                            <span class="amount">Nuit à partir de <span class="bold">128€</span></span>
+                            <span class="stars"><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images//hebergements/Large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau - Chambres d'hôtes">
+                            <span class="accomName"><strong>Au coeur de l'eau<br>Chambres d'hôtes</strong></span>
+                            <span class="amount">Nuit à partir de <span class="bold">71€</span></span>
+                            <span class="stars"><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOff"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images//hebergements/Large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+                            <span class="accomName"><strong>Hôtel Tout bleu et<br>Blanc</strong></span>
+                            <span class="amount">Nuit à partir de <span class="bold">71€</span></span>
+                            <span class="stars"><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOff"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+    </main>
+    <!--
+    <div id="mainContent">
+
         <div id="topContent">
-            <!-- 
+            &lt;!&ndash;
                 Content sections : Accomodations + Most Popular
-            -->
+            &ndash;&gt;
             <main>
-                <!-- 
+                &lt;!&ndash;
                     Content secion : Accomodations
-                -->
+                &ndash;&gt;
                 <article id="leftCol">
                     <h2>Hébergements à Marseille</h2>
                     <ul>
@@ -128,42 +150,14 @@
                     <p><strong><a href="#">Afficher plus</a></strong></p>                
                 </article>
             </main>
-            <!-- 
+            &lt;!&ndash;
                 Content section : Most popular accomodations
-            -->
-            <aside id="rightCol">
-                <h2>Les plus populaires<span><i class="fas fa-chart-line"></i></span></h2>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="images//hebergements/Large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                                <span class="accomName"><strong>Hôtel Le soleil du<br>matin</strong></span>
-                                <span class="amount">Nuit à partir de <span class="bold">128€</span></span>
-                                <span class="stars"><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i></span>
-                            </a>
-                        </li>  
-                        <li>
-                            <a href="#">
-                                <img src="images//hebergements/Large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau - Chambres d'hôtes">
-                                <span class="accomName"><strong>Au coeur de l'eau<br>Chambres d'hôtes</strong></span>
-                                <span class="amount">Nuit à partir de <span class="bold">71€</span></span>
-                                <span class="stars"><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOff"></i></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images//hebergements/Large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
-                                <span class="accomName"><strong>Hôtel Tout bleu et<br>Blanc</strong></span>
-                                <span class="amount">Nuit à partir de <span class="bold">71€</span></span>
-                                <span class="stars"><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOn"></i><i class="fas fa-star starsOff"></i></span>
-                            </a>
-                        </li>                
-                    </ul>
-            </aside>
+            &ndash;&gt;
+
         </div>
-        <!-- 
+        &lt;!&ndash;
             Content section : Activities
-        -->
+        &ndash;&gt;
         <section id="blocAct">
             <h2>Activités à Marseille</h2>
             <div id="contAct">
@@ -226,9 +220,9 @@
             </div>            
         </section>        
     </div>
-    <!-- 
+    &lt;!&ndash;
         FOOTER Section
-    -->
+    &ndash;&gt;
     <footer id="mainFooter">
         <section>
             <h3>A propos</h3>
@@ -246,6 +240,6 @@
             <span><a href="#">Centre d'aide</a></span>
             <span><a href="#">Nous contacter</a></span>
         </section>
-    </footer>
+    </footer>-->
 </body>
 </html>
