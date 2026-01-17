@@ -7,7 +7,7 @@
 Creation of a prototype, integrating the responsive design in HTML and CSS.
 
 ## Ressources
-Les fichiers sont disponibles ici [Zip](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P2+HTML+&+CSS/Projet+2+-+Reservia+FR.zip)
+Files are available here [zip file](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P2+HTML+&+CSS/Projet+2+-+Reservia+FR.zip)
 
 ## Technical constraint
 - The website prototype must be adaptable for desktop, tablet and mobile
