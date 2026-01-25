@@ -18,7 +18,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#accomodation">Hébergements</a></li>
+                <li><a href="#accommodation">Hébergements</a></li>
                 <li><a href="#activities">Activités</a></li>
             </ul>
         </nav>
@@ -51,7 +51,7 @@
             </div>
             <p><span><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
-        <section class="bloc-accomodation" id="accomodation">
+        <section class="bloc-accommodation" id="accommodation">
             <aside class="rightCol">
                 <h2 class="data-title">Les plus populaires<span><i class="fas fa-chart-line"></i></span></h2>
                 <ul>
@@ -214,8 +214,8 @@
         <section class="bloc-activity" id="activities">
             <h2 class="data-title">Activités à Marseille</h2>
             <div class="activities">
-                <ul>
-                    <li>
+                <ul class="activities__first_list">
+                    <li class="activities__item-first">
                         <a href="#">
                             <figure>
                                 <img src="./images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.webp"
@@ -224,25 +224,29 @@
                             </figure>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./images/activites/paul-hermann-QFTrLdQIRhI-unsplash.webp"
-                                     alt="Fort de Pomègues">
-                                <figcaption>Port de Pomègues</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.webp"
-                                     alt="&Icirc;les du Frioul">
-                                <figcaption>&Icirc;les du Frioul</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="./images/activites/paul-hermann-QFTrLdQIRhI-unsplash.webp"
+                                         alt="Fort de Pomègues">
+                                    <figcaption>Port de Pomègues</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="./images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.webp"
+                                         alt="&Icirc;les du Frioul">
+                                    <figcaption>&Icirc;les du Frioul</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="activities__first_list">
+                    <li class="activities__item-first">
                         <a href="#">
                             <figure>
                                 <img src="./images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.webp"
@@ -251,45 +255,54 @@
                             </figure>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./images/activites/florian-wehde-xW9e8gdotxI-unsplash.webp"
-                                     alt="Notre-Dame-de-la-Garde">
-                                <figcaption>Notre-Dame-de-la-Garde</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./images/activites/lena-paulin-wH2-EJoDcV0-unsplash.webp"
-                                     alt="Parc Longchamp">
-                                <figcaption>Parc Longchamp</figcaption>
-                            </figure>
-                        </a>
-                    </li>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="./images/activites/florian-wehde-xW9e8gdotxI-unsplash.webp"
+                                         alt="Notre-Dame-de-la-Garde">
+                                    <figcaption>Notre-Dame-de-la-Garde</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="./images/activites/lena-paulin-wH2-EJoDcV0-unsplash.webp"
+                                         alt="Parc Longchamp">
+                                    <figcaption>Parc Longchamp</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
                 </ul>
             </div>
         </section>
     </main>
     <footer>
-        <h3>A propos</h3>
-        <ul class="footer-about">
-            <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Conditions générales de vente</a></li>
-            <li><a href="#">Données et confidentialité</a></li>
-        </ul>
-        <h3>Nos hébergements</h3>
-        <ul class="footer-accomodation">
-            <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
-        </ul>
-        <h3>Assistance</h3>
-        <ul class="footer-support">
-            <li><a href="#">Centre d'aide</a></li>
-            <li><a href="#">Nous contacter</a></li>
-        </ul>
+        <section>
+            <h3>A propos</h3>
+            <ul class="footer-about">
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Nos hébergements</h3>
+            <ul class="footer-accommodation">
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Assistance</h3>
+            <ul class="footer-support">
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </section>
+
     </footer>
 </body>
 </html>

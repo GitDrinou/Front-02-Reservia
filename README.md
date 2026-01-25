@@ -12,7 +12,7 @@ Files are available here [zip file](https://s3-eu-west-1.amazonaws.com/course.oc
 ## Technical constraint
 - The website prototype must be adaptable for desktop, tablet and mobile
 - No framework, no CSS compiler
-- Using Flexbox
+- Using Flexbox or CSS-Grid
 - Use of semantic tags
 - No errors or alerts via the W3C HTML and CSS validator
 
